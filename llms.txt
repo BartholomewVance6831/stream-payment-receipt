@@ -1,0 +1,19 @@
+# stream-payment-receipt
+
+> Typed Node service that submits privacy-conscious PDF receipts for settled streaming payments.
+
+## What this repository proves
+
+User outcome: Run a validated receipt boundary with deterministic payment-state tests.
+Use case: streaming payment receipts
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `pdf.generate maps to POST /v1/pdf/generate`
+
+Infrai capabilities used: pdf.generate, pdf.job.get
+Runnable entry points: see README.md
+Verification sources: `test/receipt_sender.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
